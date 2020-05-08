@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import time
+import datetime
+
+#Curent time
+now = datetime.datetime.now()
 
 #Function that scrap s&p 500 price
 def sp500Price():
@@ -18,8 +22,10 @@ def sp500Price():
 
 
 while True:
+    print (now.now().strftime("%H:%M:%S"))
+            
     #Calling the functions
     sp500Price()
 
-    #Repeat function calling every 60 seconds 
+    #Repeat function calling every 60 seconds
     time.sleep(60)
