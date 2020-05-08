@@ -18,5 +18,8 @@ def sp500Price():
 
 
 while True:
+    #Calling the functions
     sp500Price()
+
+    #Repeat function calling every 60 seconds 
     time.sleep(60)
