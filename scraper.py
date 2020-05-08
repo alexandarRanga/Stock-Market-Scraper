@@ -42,4 +42,4 @@ while True:
     ApplePrice()
 
     #Repeat function calling every 60 seconds
-    time.sleep(60)
+    time.sleep(300)
